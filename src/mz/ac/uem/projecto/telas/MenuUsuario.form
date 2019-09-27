@@ -329,7 +329,7 @@
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Component id="btnEditar" max="32767" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Component id="btnApagar" max="32767" attributes="0"/>
+                  <Component id="btnApaga" max="32767" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Component id="btnLimpar" min="-2" pref="132" max="-2" attributes="0"/>
                   <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
@@ -343,7 +343,7 @@
                   <Group type="103" groupAlignment="1" attributes="0">
                       <Component id="btnLimpar" min="-2" pref="74" max="-2" attributes="0"/>
                       <Component id="btnAdicionar" alignment="1" min="-2" pref="72" max="-2" attributes="0"/>
-                      <Component id="btnApagar" min="-2" pref="74" max="-2" attributes="0"/>
+                      <Component id="btnApaga" min="-2" pref="74" max="-2" attributes="0"/>
                       <Component id="btnEditar" min="-2" pref="74" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace pref="18" max="32767" attributes="0"/>
@@ -380,7 +380,7 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnEditarActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="btnApagar">
+        <Component class="javax.swing.JButton" name="btnApaga">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="0" green="0" red="0" type="rgb"/>
@@ -391,7 +391,7 @@
             <Property name="toolTipText" type="java.lang.String" value="Apagar"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnApagarActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnApagaActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btnLimpar">

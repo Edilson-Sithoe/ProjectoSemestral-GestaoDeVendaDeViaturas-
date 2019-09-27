@@ -123,7 +123,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
         jmRegistro.add(jmiClientes);
 
         jmiAlDev.setFont(new java.awt.Font("Baskerville Old Face", 0, 16)); // NOI18N
-        jmiAlDev.setText("Aluguer/Devolução");
+        jmiAlDev.setText("Venda");
         jmRegistro.add(jmiAlDev);
 
         jmiUsuario.setBackground(new java.awt.Color(0, 102, 102));

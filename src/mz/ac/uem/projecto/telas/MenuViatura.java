@@ -23,7 +23,7 @@ public class MenuViatura extends javax.swing.JInternalFrame {
         jPanel4 = new javax.swing.JPanel();
         btnSalvar = new javax.swing.JButton();
         btnEditar = new javax.swing.JButton();
-        btnApagar = new javax.swing.JButton();
+        btnApaga = new javax.swing.JButton();
         jPanel5 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
         lblIdViatura = new javax.swing.JLabel();
@@ -83,8 +83,8 @@ public class MenuViatura extends javax.swing.JInternalFrame {
         btnEditar.setBackground(new java.awt.Color(0, 0, 0));
         btnEditar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mz.ac.uem.projecto.icones/update.png"))); // NOI18N
 
-        btnApagar.setBackground(new java.awt.Color(0, 0, 0));
-        btnApagar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mz.ac.uem.projecto.icones/delete.png"))); // NOI18N
+        btnApaga.setBackground(new java.awt.Color(0, 0, 0));
+        btnApaga.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mz.ac.uem.projecto.icones/delete.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -96,14 +96,14 @@ public class MenuViatura extends javax.swing.JInternalFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnEditar, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(btnApagar)
+                .addComponent(btnApaga)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(btnSalvar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(btnEditar, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(btnApagar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(btnApaga, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         jPanel5.setBackground(new java.awt.Color(0, 102, 102));
@@ -522,7 +522,7 @@ public class MenuViatura extends javax.swing.JInternalFrame {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnApagar;
+    private javax.swing.JButton btnApaga;
     private javax.swing.JButton btnEditar;
     private javax.swing.JButton btnSalvar;
     private javax.swing.JComboBox cboCategoria;

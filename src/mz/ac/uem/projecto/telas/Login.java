@@ -105,9 +105,9 @@ public class Login extends javax.swing.JFrame {
         System.out.println(conectar);
 
         if (conectar != null) {
-            lblStatus.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mz/ac/uem/projecto/icones/conet.png")));
+//            lblStatus.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mz/ac/uem/projecto/icones/conet.png")));
         } else {
-            lblStatus.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mz/ac/uem/projecto/icones/Nconeta.png")));
+//            lblStatus.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mz/ac/uem/projecto/icones/Nconeta.png")));
         }
     }
 

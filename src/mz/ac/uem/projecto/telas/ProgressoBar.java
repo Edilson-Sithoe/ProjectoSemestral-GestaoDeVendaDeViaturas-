@@ -23,7 +23,7 @@ import javax.swing.Timer;
 public class ProgressoBar extends JFrame implements ActionListener {
 
     private int count = 0;
-    private Timer T = null;
+    private Timer Tempo = null;
     JProgressBar progresso;
     JPanel painel;
     JFrame janela;
@@ -35,7 +35,7 @@ public class ProgressoBar extends JFrame implements ActionListener {
          Image temo_img = img.getScaledInstance(2000, 1100, Image.SCALE_SMOOTH);
          background_image = new ImageIcon(temo_img);
          JLabel painel = new JLabel("", background_image, JLabel.CENTER);*/
-        T = new Timer(100, new ActionListener() {
+        Tempo = new Timer(100, new ActionListener() {
 
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -45,7 +45,7 @@ public class ProgressoBar extends JFrame implements ActionListener {
                     progresso.setValue(progresso.getValue() + 1);
                 }
                 if (progresso.getValue() == 100) {
-                    T.stop();
+                    Tempo.stop();
                     dispose();
                     new MenuPrincipal();
                     dispose();
@@ -53,7 +53,7 @@ public class ProgressoBar extends JFrame implements ActionListener {
             }
         });
 
-        T.start();
+        Tempo.start();
         progresso = new JProgressBar();
         progresso.setBounds(100, 250, 750, 30);
         progresso.setBackground(Color.WHITE);

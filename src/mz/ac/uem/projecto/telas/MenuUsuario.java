@@ -29,7 +29,7 @@ public class MenuUsuario extends javax.swing.JInternalFrame {
         initComponents();
         conexao = ConexaoM.conection();
 
-        btnApagar.setEnabled(false);
+        btnApaga.setEnabled(false);
         btnEditar.setEnabled(false);
     }
 
@@ -66,7 +66,7 @@ public class MenuUsuario extends javax.swing.JInternalFrame {
                     txtSenha.setText(null);
                     txtTelefone.setText(null);
 
-                    btnApagar.setEnabled(false);
+                    btnApaga.setEnabled(false);
                 }
             }
 
@@ -101,7 +101,7 @@ public class MenuUsuario extends javax.swing.JInternalFrame {
 
         btnAdicionar.setEnabled(true);
         btnEditar.setEnabled(false);
-        btnApagar.setEnabled(false);
+        btnApaga.setEnabled(false);
     }
 
     public void setar_campos() {
@@ -113,7 +113,7 @@ public class MenuUsuario extends javax.swing.JInternalFrame {
         cboPerfil.setSelectedItem(tabelaUsuario.getModel().getValueAt(setar, 4).toString());
         txtSenha.setText(tabelaUsuario.getModel().getValueAt(setar, 5).toString());
 
-        btnApagar.setEnabled(true);
+        btnApaga.setEnabled(true);
         btnEditar.setEnabled(true);
 
         btnAdicionar.setEnabled(false);
@@ -211,7 +211,7 @@ public class MenuUsuario extends javax.swing.JInternalFrame {
         jPanel2 = new javax.swing.JPanel();
         btnAdicionar = new javax.swing.JButton();
         btnEditar = new javax.swing.JButton();
-        btnApagar = new javax.swing.JButton();
+        btnApaga = new javax.swing.JButton();
         btnLimpar = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
@@ -383,12 +383,12 @@ public class MenuUsuario extends javax.swing.JInternalFrame {
             }
         });
 
-        btnApagar.setBackground(new java.awt.Color(0, 0, 0));
-        btnApagar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mz.ac.uem.projecto.icones/delete.png"))); // NOI18N
-        btnApagar.setToolTipText("Apagar");
-        btnApagar.addActionListener(new java.awt.event.ActionListener() {
+        btnApaga.setBackground(new java.awt.Color(0, 0, 0));
+        btnApaga.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mz.ac.uem.projecto.icones/delete.png"))); // NOI18N
+        btnApaga.setToolTipText("Apagar");
+        btnApaga.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnApagarActionPerformed(evt);
+                btnApagaActionPerformed(evt);
             }
         });
 
@@ -413,7 +413,7 @@ public class MenuUsuario extends javax.swing.JInternalFrame {
                 .addGap(18, 18, 18)
                 .addComponent(btnEditar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(18, 18, 18)
-                .addComponent(btnApagar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btnApaga, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(18, 18, 18)
                 .addComponent(btnLimpar, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0))
@@ -425,7 +425,7 @@ public class MenuUsuario extends javax.swing.JInternalFrame {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(btnLimpar, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnAdicionar, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnApagar, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnApaga, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnEditar, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(18, Short.MAX_VALUE))
         );
@@ -537,15 +537,15 @@ public class MenuUsuario extends javax.swing.JInternalFrame {
         setar_campos();
     }//GEN-LAST:event_tabelaUsuarioMouseClicked
 
-    private void btnApagarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnApagarActionPerformed
+    private void btnApagaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnApagaActionPerformed
 
         remover();
-    }//GEN-LAST:event_btnApagarActionPerformed
+    }//GEN-LAST:event_btnApagaActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAdicionar;
-    private javax.swing.JButton btnApagar;
+    private javax.swing.JButton btnApaga;
     private javax.swing.JButton btnEditar;
     private javax.swing.JButton btnLimpar;
     private javax.swing.JComboBox cboPerfil;

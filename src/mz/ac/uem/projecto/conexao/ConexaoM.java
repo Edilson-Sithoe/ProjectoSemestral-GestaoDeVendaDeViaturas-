@@ -15,7 +15,7 @@ import java.sql.DriverManager;
 public class ConexaoM {
 
     public static Connection conection() {
-        java.sql.Connection conexao = null;
+        java.sql.Connection conectar = null;
 
         String driver =  "com.mysql.jdbc.Driver";
 
@@ -25,8 +25,8 @@ public class ConexaoM {
 
         try {
             Class.forName(driver);
-            conexao = DriverManager.getConnection(url, user, password);
-            return conexao;
+            conectar = DriverManager.getConnection(url, user, password);
+            return conectar;
         } catch (Exception e) {
             return null;
         }
